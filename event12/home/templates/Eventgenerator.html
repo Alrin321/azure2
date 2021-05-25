@@ -1,0 +1,34 @@
+﻿{% load static %}
+<html>
+<head>
+<title>Event Registration
+</title>
+<link rel="stylesheet" href="{% static 'eventGenerator.css' %}">
+</head>
+<body>
+<div class="main">
+    <div class="register">
+<h2> Event Registration<h2>
+
+<form id="register" method="post">
+<label>Event Title:</label><br>
+<input type="text" name="eventtitle" placeholder="Event name"><br><br>
+
+<label>Date:</label><br>
+<input type="text" name="Date" placeholder="event date"><br><br>
+<label>Time:</label><br>
+<input type="text" name="Time" placeholder="Event time"><br><br>
+<label>Location:</label><br>
+<input type="text" name="Location" placeholder="Event location"><br><br>
+<label>Max number of participants:</label><br>
+<input type="number" name="max_no_participants" placeholder="max participants"><br><br>
+<label>Event Description:</label><br>
+<input type="text" name="Description" placeholder="Event description"><br><br>
+<label>Event Banner:<label><br>
+<input type="file" name="eventbanner" placeholder="Event image"><br><br>
+<input type="submit">
+</form>
+</div>
+</div>
+</body>
+</html>

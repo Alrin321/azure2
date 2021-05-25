@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>College Of Engineering Chengannur</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/line-icons.css' %}">
+    <!-- Nivo Lightbox -->
+   <link rel="stylesheet"  type="text/css" href="{% static 'css/animate.css' %}">
+   <link rel="stylesheet"  type="text/css" href="{% static 'css/nivo-lightbox.css' %}">
+    <!-- Main Style -->
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main1.css' %}">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+
+
+  </head>
+  <body>
+
+    
+          <a href="bfhpage2org.html" class="navbar-brand"><img src="{% static 'img/logo1.png' %}" alt="" width="5" height="5"></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button> <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header-wrap">
+                  Upcoming Events
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  Registered Events
+                </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">
+                    <a href="createEvent">create event</a>
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                  <a class="nav-link">
+                    <a href="UserProfile">User Profile</a>
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link">
+                    <button type="button" onclick="window.location.href='logout'">Logout</button>
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-sm-12">
+              <div class="contents text-center">
+                <div class="icon">
+                  <i class="lni-mic"></i>
+                </div>
+                <h2 class="head-title">Upcoming Events</h2>
+                <div id="images">
+                  <div class="row">
+                    {% for events in details %}
+                    <div class="col">
+                      <a href= 'showevent' >
+                    <img src="{{ events.eventbanner.url}}">
+                    </a>
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Area End -->
+
+    </header>
+   
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          
+                <div class="about-text">  
+                  <h2>Registered Events</h2>
+                   <div class="container">
+                  <div class ="row">
+                    <div class="col">
+                       <img  src="{% static 'img/download.jpg' %}">
+                      </div>
+                    
+                    <div class ="col">
+                      <img src="{% static 'img/image1.jpg' %}">
+                    </div>
+                     <div class ="col">
+                      <img src="{% static 'img/image2.jpg' %}">
+                    </div>
+                        
+                    </div>
+                  </div>
+                  
+                </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

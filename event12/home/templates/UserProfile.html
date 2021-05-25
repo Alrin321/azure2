@@ -1,0 +1,45 @@
+﻿{% load static %}
+<link rel="stylesheet"
+  href="{% static 'userProfile.css' %}" type="text/css">
+
+<div class="wrapper">
+    <div class="left">
+        <img src="{% static 'flaticon.png' %}" alt="user" width="100">
+        <h4>{{User_Details.username}}</h4>
+        
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Information</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>Email</h4>
+                    <p>{{User_Details.email}}</p>
+                 </div>
+                 <div class="data">
+                   <h4>Phone</h4>
+                    <p>{{User_Details.mobile}}</p>
+              </div>
+              <div class="data">
+                <h4>Semester</h4>
+                <p>{{User_Details.semester}}</p>
+             </div>
+            </div>
+        </div>
+    </div>
+      <div class="projects">
+            <h3>Events Attended</h3>
+            <div class="projects_data">
+                 <div class="data">
+                  <img src="{% static 'event1.png' %}" alt="user" width="100">
+                 </div>
+                 <div class="data">
+                  <img src="{% static 'event2.png' %}" alt="user" width="100">
+              </div>
+            </div>
+        </div>
+      
+       
+    </div>
+</div>
+

@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Sign Up  Page</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" >
+   <body>
+    <div class="Sign-In">
+<img src="{% static 'login.png' %}">
+<h1>Sign Up</h1>
+ <form class="input-group"  method="post">
+    {% csrf_token %}
+     <input type="text"class="input-box" name="username" placeholder="Name">
+     <input type="text"class="input-box"  name="semester" placeholder="Semester">
+     <input type="text"class="input-box"  name="mobile" placeholder="Mobile">
+     <input type="email"class="input-box"  name="email" placeholder="Email">
+     <input type="password"class="input-box"  name="password"placeholder="Password">
+     <p><span><input type="checkbox"></span>I agree to terms and condition</p>
+     <button type="submit"class="signIn-btn">Sign Up</button>
+    </form>
+            
+</div>
+
+</body>
