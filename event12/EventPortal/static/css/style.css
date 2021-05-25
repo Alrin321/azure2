@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding:0;
+	font-family: sans-serif;
+	background-image:url("background.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.Sign-In
+{
+	width: 300px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background: white;
+	padding: 20px;
+	margin: 8% auto 0;
+	text-align: center;
+}
+.Sign-In h1
+{
+	color: #1c8adb;
+	margin-bottom: 30px;
+}
+
+.input-box
+{
+	border-radius: 0;
+	padding: 10px;
+	margin: 10px 0;
+	width: 90%;
+	border: 1px solid #999;
+	outline: none;
+}
+button
+{
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10 px 0;
+	border:none;
+	outline:none;
+	cursor: pointer;
+}
+.signIn-btn
+{background-color: #1c8adb;
+}
+img{
+	width: 70px;
+
+}
